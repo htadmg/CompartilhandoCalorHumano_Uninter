@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - CompartilhandoCalorHumano_Uninter</title>
+
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/Login.css" />
+    <link rel="stylesheet" href="~/css/home.css" />
+    <link rel="stylesheet" href="~/css/Perfil.css" />
+    <link rel="stylesheet" href="~/css/categorias.css" />
+</head>
+<body>
+    <header class="header">
+        <h1 class="header-h1">Compartilhando Calor Humano</h1>
+    </header>
+    <nav class="nav-primaria">
+        <ul class="nav-primaria-ul">
+            <li class="nav-item"><a href="/Home/Index" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="/Home/Sobre" class="nav-link">Sobre</a></li>
+            <li class="nav-item"><a href="/Home/Contato" class="nav-link">Contato</a></li>
+        </ul>
+    </nav>
+    <div class="sidebar">
+        <ul class="ul__sidebar">
+            <li class="li__sidebar" id="infantil">
+                <a href="/Infantil/Index" class="a__sidebar">Infantil</a>
+            </li>
+            <li class="li__sidebar" id="adulto">
+                <a href="/Adulto/Index" class="a__sidebar">Adulto</a>
+            </li>
+            <li class="li__sidebar" id="casa">
+                <a href="/Casa/Index" class="a__sidebar">Casa</a>
+            </li>
+            <li class="li__sidebar" id="higiene">
+                <a href="/Higiene/Index" class="a__sidebar">Higiene</a>
+            </li>
+        </ul>
+    </div>
+    <div class="search-bar">
+        <input type="text" class="search-input" placeholder="Buscar...">
+        <button class="search-button">Buscar</button>
+    </div>
+    <div class="user-options">
+        <a class="login-link" href="/login">Login</a>
+        <a class="register-link" href="/cadastro">Cadastrar</a>
+    </div>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="footer">
+        <ul class="footer-ul">
+            <li class="footer-li">
+                <a href="#" target="_blank" class="footer-link">
+                    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0/css/bootstrap.min.css">
+                    <i class="bi bi-instagram"></i>
+                </a>
+            </li>
+            <li class="footer-li">
+                <a href="#" target="_blank" class="footer-link">
+                    <i class="bi bi-twitter"></i>
+                </a>
+            </li>
+            <li class="footer-li">
+                <a href="#" target="_blank" class="footer-link">
+                    <i class="bi bi-facebook"></i>
+                </a>
+            </li>
+            <li class="footer-li">
+                <a href="mailto:agatadominguestec@hotmail.com" class="footer-link">
+                    <i class="bi bi-envelope"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

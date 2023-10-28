@@ -1,0 +1,39 @@
+﻿@{
+    ViewData["Title"] = "Cadastro";
+}
+@if (TempData.ContainsKey("Mensagem"))
+{
+    <div id="mensagem">
+        @TempData["Mensagem"]
+    </div>
+}
+
+<div class="Cadastro">
+    <h1 class="cadastro-titulo">Cadastro</h1>
+    <form class="cadastro-formulario" action="/Cadastro/Adicionar" method="post" enctype="multipart/form-data">
+        <label for="nome" class="cadastro-label">Nome:</label>
+        <input type="text" id="nome" name="nome" class="cadastro-input" required><br>
+
+        <label for="email" class="cadastro-label">Email:</label>
+        <input type="email" id="email" name="email" class="cadastro-input" required><br>
+
+        <label for="cpf" class="cadastro-label">CPF:</label>
+        <input type="text" id="cpf" name="cpf" class="cadastro-input" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" required>
+        <small class="cadastro-small">Formato: 123.456.789-01</small><br>
+
+        <label for="telefone" class="cadastro-label">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" class="cadastro-input" required><br>
+
+        <label for="data_nascimento" class="cadastro-label">Data de Nascimento:</label>
+        <input type="date" id="data_nascimento" name="datadenascimento" class="cadastro-input" required><br>
+
+        <label for="senha" class="cadastro-label">Senha:</label>
+        <input type="password" id="senha" name="senha" class="cadastro-input" onkeyup="forcaDaSenha()" required><br>
+        <div id="ErroSenhaForca"></div>
+        <label for="imagem" class="cadastro-label">Imagem de Perfil:</label>
+        <input type="file" id="imagem" name="imagemIform" class="cadastro-input" accept="image/*" required><br>
+
+        <input type="submit" value="Cadastrar" class="cadastro-botao">
+    </form>
+
+</div>

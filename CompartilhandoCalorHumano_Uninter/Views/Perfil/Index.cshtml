@@ -1,0 +1,60 @@
+﻿@{
+    ViewData["Title"] = "Perfil";
+}
+<div class="home">
+    <div class="profile">
+        <img class="profile-image" src="~/imagens/imagem03.jpeg" />
+        <h1 class="profile-name">Nome do Usuário</h1>
+        <p class="profile-email">Email: usuario@example.com</p>
+    </div>
+
+    <div class="doacao-form">
+        <h2 class="form-title">Adicionar Postagem de Doação</h2>
+        <form class="form" action="/Perfil/Adicionar" method="post">
+            <label for="nome" class="form-label">Nome:</label>
+            <input type="text" id="nome" name="nome" class="form-input" required><br>
+
+            <label for="telefone" class="form-label">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="form-input" required>
+            <small class="form-small">Formato: 123-456-7890</small><br>
+
+            <label for="imagem" class="form-label">Imagem:</label>
+            <input type="file" id="imagem" name="imagem" accept="image/*" class="form-input" required><br>
+
+            <label for="descricao" class="form-label">Descrição:</label>
+            <textarea id="descricao" name="descricao" class="form-textarea" required></textarea><br>
+
+            <label for="categoria" class="form-label">Categoria:</label>
+            <select id="categoria" name="categoria" class="form-select" required>
+                <option>Infantil</option>
+                <option>Adulto</option>
+                <option>Casa</option>
+                <option>Higiene</option>
+            </select>
+            <label for="Setor" class="form-label">Setor:</label>
+            <select id="setor" name="setor" class="form-select" required>
+                <option>Camisas</option>
+                <option>Saias</option>
+                <option>Shorts</option>
+                <option>Calças</option>
+                <option>Vestidos</option>
+                <option>Vestidos</option>
+                <option>Sapatos</option>
+                <option>Acessorios</option>
+                <option>Moveis</option>
+                <option>Eletrodomesticos</option>
+                <option>Utensilios</option>
+                <option>Decorações</option>
+                <option>Limpeza</option>
+                <option>Sabonete</option>
+                <option>Shampoos</option>
+                <option>Desodorantes</option>
+                <option>Absorventes</option>
+                <option>outros</option>
+            </select>
+
+            <input type="submit" class="form-submit">
+        </form>
+    </div>
+</div>
+

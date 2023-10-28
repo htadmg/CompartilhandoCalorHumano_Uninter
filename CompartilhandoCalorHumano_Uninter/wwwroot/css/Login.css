@@ -1,0 +1,117 @@
+﻿:root {
+    --Design-gráfico-1-hex: #D9A273;
+    --Design-gráfico-2-hex: #A66E4E;
+    --Design-gráfico-3-hex: #845544;
+    --Design-gráfico-4-hex: #d6d6d6;
+    --preto-hex: #000000;
+    --branco-hex: #ffffff;
+}
+
+.login {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.login-titulo {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.login-label {
+    font-weight: bold;
+}
+
+.login-input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login-checkbox {
+    margin-bottom: 10px;
+}
+
+.login-lembrar {
+    font-size: 14px;
+}
+
+.login-esqueci {
+    display: block;
+    text-align: right;
+    font-size: 14px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+.login-botao {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--Design-gráfico-2-hex);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+    .login-botao:hover {
+        background-color: var(--Design-gráfico-1-hex-hex);
+    }
+/*Cadastro*/
+.Cadastro {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cadastro-titulo {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.cadastro-label {
+    color: var(--Design-gráfico-3-hex);
+}
+
+.cadastro-input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.cadastro-small {
+    font-size: 14px;
+    color: #777;
+}
+
+.cadastro-botao {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--Design-gráfico-2-hex);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+    .cadastro-botao:hover {
+        cursor: pointer;
+    }

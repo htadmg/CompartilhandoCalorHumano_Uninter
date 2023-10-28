@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Contato";
+}
+
+<main class="contato">
+    <section class="contact-info">
+        <h2 class="info-title">Informações de Contato</h2>
+        <p class="info-item">Endereço: Rua Exemplo, 123</p>
+        <p class="info-item">Telefone: (11) 1234-5678</p>
+        <p class="info-item">Email: contato@exemplo.com</p>
+    </section>
+
+    <section class="contact-form">
+        <h2 class="form-title">Envie-nos uma Mensagem</h2>
+        <form class="form">
+            <label for="nome" class="form-label">Nome:</label>
+            <input type="text" id="nome" name="nome" class="form-input" required><br><br>
+
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" id="email" name="email" class="form-input" required><br><br>
+
+            <label for="mensagem" class="form-label">Mensagem:</label><br>
+            <textarea id="mensagem" name="mensagem" class="form-textarea" rows="4" cols="50" required></textarea><br><br>
+
+            <input type="submit" value="Enviar" class="form-submit">
+        </form>
+    </section>
+</main>
